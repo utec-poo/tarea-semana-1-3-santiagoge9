@@ -19,8 +19,6 @@ int main() {
     valor = numero ;
     // 'El programa trabaja leyendo el iterativo como los dígitos ordenados del numero'
     do{
-        cout << "\n    Listo    " << valor ;
-
         iterativo = valor % 10 ;
         // 'El iterativo será el último dígito del número'
         if ((iterativo % 2) == 0)
@@ -33,8 +31,6 @@ int main() {
         }
         //se genera un nuevo valor para trabajar
         valor = valor / 10 ;
-        cout << "\n    Listo    " << valor ;
-
     } while ( valor > 0 ) ;
 
     cout << "\n    El numero es: " << numero ;
