@@ -1,17 +1,16 @@
 #include <iostream>
-#include "Tipos.h"
 using namespace std;
+using entero = double;
 
-int main() {
+entero Area ( entero base , entero altura ) {
+    entero area = ( base * altura ) / 2 ;
+    return area ;
+}
 
-entero base=0, entero altura=0;
-cout << "\ningrese la base:";
-cin >> base;
-cout << "\ningrese la altura:";
-cin >> altura;
-
-
-// ToDO
-
-  return 0;
+int main () {
+    entero Base = 0 , Altura = 0 ;
+    cout << "\nIngrese la base y la altura de su triangulo para calcular su area \n" ;
+    cin >> Base >> Altura ;
+    cout << Area ( Base , Altura ) << "\n\n" ;
+    return 0 ;
 }
